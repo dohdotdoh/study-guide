@@ -46,8 +46,8 @@ importers:
         specifier: ^2.8.5
         version: 2.8.5
       dotenv:
-        specifier: ^18.0.5
-        version: 18.0.5
+        specifier: ^18.0.10
+        version: 18.0.10
       express:
         specifier: ^4.21.2
         version: 4.21.2
@@ -335,12 +335,15 @@ packages:
 
   '@mercuryworkshop/bare-mux@2.1.9':
     resolution: {integrity: sha512-fiOqWm3VP0Bl8T+0l+qnb7ab9zO+PpKVbtJvOnMsefUv6kWIaoDtqyr9hd/t4gA8oBwgtyZVqIwO2J9nKY9ylw==}
+    deprecated: this is deprecated and will no longer be recieving updates, please use proxy-transports instead
 
   '@mercuryworkshop/epoxy-tls@2.1.18-1':
     resolution: {integrity: sha512-2N1BYn/+FJxIbRw+sipbl3mQPinRflqQDB9HGAXJEVj4Ok4FIlTlS4fO2cpXKEq5yoD3oaKb8GyNaQfndNui9w==}
+    deprecated: Trusts the compromised eMudhra intermediate CAs (Oct 2026). Upgrade to >=2.1.20-1.
 
   '@mercuryworkshop/epoxy-transport@2.1.28':
     resolution: {integrity: sha512-lv/Kfdn37y8ZCXQaIT3Ebj4OSztBqeXdbR9rchbHQBKIw/fNSQJLGNBHV5ScXSzqt7NCwv8ZiZx7urRyk7Ua/Q==}
+    deprecated: Bundles an epoxy-tls that trusts the compromised eMudhra intermediate CAs (Oct 2026). Upgrade to >=3.0.2 (proxy-transports) or 2.1.29 (bare-mux).
 
   '@mercuryworkshop/libcurl-transport@1.5.2':
     resolution: {integrity: sha512-E0tD/3W6HE99ypc7CStpchU6xs+TP5u2vms/9q/46BShblB2pbRCNeXHBlvXqdz97nh2Xh4A68DryDt5CM29Dg==}
@@ -354,6 +357,7 @@ packages:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.10':
     resolution: {integrity: sha512-Sf0Leb+NMEwFA8EQxCLW/wJW6TNR/EITBPKHadiq4DNOEbgXJdmIW8PKmsNkyOvAIN6o2peE86S6qxQt6ft1Ew==}
+    deprecated: this project is deprecated and has been superceeded by @mercuryworkshop/scramjet, it is recommended you switch to this instead
 
   '@types/minimatch@3.0.5':
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
@@ -596,8 +600,8 @@ packages:
     resolution: {integrity: sha512-MVUtAugQMOff5RnBy2d9N31iG0lNwg1qAoAOn7pOK5wf94WIaE3My2p3uwTQuvS2AcqchkcR3bHByjaM0mmi7Q==}
     engines: {node: '>=20'}
 
-  dotenv@18.0.5:
-    resolution: {integrity: sha512-aBrGvt6KhjxbEnatqMWOMidftwsrCiCvqh1yNIGB9QyF0J+VcWkKDMsvYOEm7ZS82oiV+BT1sTOtIlAmUlTpwQ==}
+  dotenv@18.0.10:
+    resolution: {integrity: sha512-89FAA1xchzK2mxVWdr5F/0rldwiueXs6zJM86rO66EzekR1iBdiXRthyG+m5GvkJaFH3C2LESzamTkgndmLT2A==}
     engines: {node: '>=12'}
     hasBin: true
 
@@ -1653,7 +1657,7 @@ snapshots:
     dependencies:
       type-fest: 5.6.0
 
-  dotenv@18.0.5: {}
+  dotenv@18.0.10: {}
 
   dunder-proto@1.0.1:
     dependencies:
